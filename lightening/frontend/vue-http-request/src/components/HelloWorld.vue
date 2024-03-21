@@ -2,10 +2,11 @@
   <div>
     <div id="userList" v-for="(key, index) in Object.keys(data)" :key="index">
       <p>{{ data[key].username }}</p>
+
       <img :src="data[key].profilePicture" alt="Profile Picture" >
     </div>
   </div>
-</template>
+</template> 
 
 <style>
 #userList{
@@ -31,7 +32,7 @@ h1{
 }
 
 body{
-  background:rgb(205, 203, 203);
+  background:lime;
   padding: 0;
   margin: 0;
 }
